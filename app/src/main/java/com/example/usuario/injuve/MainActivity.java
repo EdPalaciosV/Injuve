@@ -136,12 +136,12 @@ public class MainActivity extends AppCompatActivity {
     {
         title= Arrays.asList("Voluntarios","Colaboradores","Mentor","Inversor","Migrantes","Creadores");
 
-        List<String> voluntarios=Arrays.asList("Servicio Social","Ciudadano");
-        List<String> colaboradores=Arrays.asList("Comparte y cordina proyectos","Colabora con proyectos");
-        List<String> mentor =Arrays.asList("Voluntario","Honorario","Comprometido");
-        List<String> inversor=Arrays.asList("Ciudadano","PyMES","Empresa","Otros");
-        List<String> migrantes=Arrays.asList("Inversion","Proponer");
-        List<String> creadores=Arrays.asList("Proyectos Lucrativos","Proyectos Filantropicos");
+        List<String> voluntarios=Arrays.asList("¿Quiénes somos voluntarios?");
+        List<String> colaboradores=Arrays.asList("¿Quiénes somos colaboradores?");
+        List<String> mentor =Arrays.asList("¿Quiénes somos mentores?");
+        List<String> inversor=Arrays.asList("¿Quiénes somos inversores?");
+        List<String> migrantes=Arrays.asList("¿Quiénes somos migrantes?");
+        List<String> creadores=Arrays.asList("¿Quiénes somos creadores?");
 
         childs=new HashMap<>();
         childs.put(title.get(0),voluntarios);

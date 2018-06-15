@@ -28,9 +28,9 @@
     </LinearLayout>
 
     <ExpandableListView
-        android:layout_width="330dp"
-        android:layout_gravity="left|start"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_gravity="left|start"
         android:id="@+id/list"
         android:background="@color/backgroundList"
         android:divider="@color/dividerColor"
