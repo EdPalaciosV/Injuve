@@ -143,6 +143,7 @@ public class MainActivity extends AppCompatActivity {
         List<String> migrantes=Arrays.asList("¿Quiénes somos migrantes?");
         List<String> creadores=Arrays.asList("¿Quiénes somos creadores?");
 
+        //s
         childs=new HashMap<>();
         childs.put(title.get(0),voluntarios);
         childs.put(title.get(1),colaboradores);
