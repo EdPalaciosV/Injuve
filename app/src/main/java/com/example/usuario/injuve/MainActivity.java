@@ -1,8 +1,7 @@
 package com.example.usuario.injuve;
 
-import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
@@ -12,7 +11,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -33,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     Toolbar toolbar;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle drawerToggle;
-    String ActTitle;
+    String ActTitle, selectedGroup;
     Fragment fragmentResources;
 
 
@@ -65,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onGroupExpand(int i) {
                 getSupportActionBar().setTitle("INJUVE");
+                selectedGroup =(String)expandableListViewAdapter.getGroup(i);
+                Toast.makeText(getApplicationContext(),selectedGroup,Toast.LENGTH_LONG).show();
+
+
             }
         });
 
@@ -75,9 +77,14 @@ public class MainActivity extends AppCompatActivity {
 
                 String selectedItem=expandableListViewAdapter.getChild(i,i1).toString();
                 getSupportActionBar().setTitle(selectedItem);
-
-                setFragmentArguments(selectedItem);
+                //setFragmentArguments(selectedItem);
                 drawerLayout.closeDrawer(GravityCompat.START);
+                if(selectedGroup=="Mapa Específico")
+                {
+
+                    Intent intent=new Intent(MainActivity.this,MapsActivity.class);
+                    startActivity(intent);
+                }
 
 
 
@@ -134,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void colocarItems()
     {
-        title= Arrays.asList("Voluntarios","Colaboradores","Mentor","Inversor","Migrantes","Creadores");
+        title= Arrays.asList("Voluntarios","Colaboradores","Mentor","Inversor","Migrantes","Creadores","Mapa Específico");
 
         List<String> voluntarios=Arrays.asList("¿Quiénes somos voluntarios?");
         List<String> colaboradores=Arrays.asList("¿Quiénes somos colaboradores?");
@@ -142,8 +149,9 @@ public class MainActivity extends AppCompatActivity {
         List<String> inversor=Arrays.asList("¿Quiénes somos inversores?");
         List<String> migrantes=Arrays.asList("¿Quiénes somos migrantes?");
         List<String> creadores=Arrays.asList("¿Quiénes somos creadores?");
+        List<String> mapa_Estrategico=Arrays.asList("Mapa");
 
-        //s
+
         childs=new HashMap<>();
         childs.put(title.get(0),voluntarios);
         childs.put(title.get(1),colaboradores);
@@ -151,6 +159,7 @@ public class MainActivity extends AppCompatActivity {
         childs.put(title.get(3),inversor);
         childs.put(title.get(4),migrantes);
         childs.put(title.get(5),creadores);
+        childs.put(title.get(6),mapa_Estrategico);
 
 
 
