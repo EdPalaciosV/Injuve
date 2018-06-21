@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "128946060376",
+    "firebase_url": "https://injuve-app.firebaseio.com",
+    "project_id": "injuve-app",
+    "storage_bucket": "injuve-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128946060376:android:ef488367e1cf72f1",
+        "android_client_info": {
+          "package_name": "com.example.usuario.injuve"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "128946060376-2o5abbd1t47t0rcerorpuj12bnepehh0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.usuario.injuve",
+            "certificate_hash": "6a6417c7c893623eb2d9070729f938c293382299"
+          }
+        },
+        {
+          "client_id": "128946060376-i9h2gs1d724596thuhbthf1585ri3cgr.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "128946060376-i9h2gs1d724596thuhbthf1585ri3cgr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIav4un81xYpKkcyVhIIDvyrmLs09Hpw8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "128946060376-i9h2gs1d724596thuhbthf1585ri3cgr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

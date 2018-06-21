@@ -16,9 +16,16 @@
     </fragment>
 
 
-        <include layout="@layout/filter_design">
-
-        </include>
+       <fragment
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:name="com.example.usuario.injuve.FragmentSheetMenu"
+           android:id="@+id/fragmentBlank"
+           tools:layout="@layout/fragment_design_menu_sheet"
+           map:layout_behavior="@string/bottom_sheet_behavior"
+           map:behavior_hideable="true"
+           map:behavior_peekHeight="50dp">
+       </fragment>
 
 
 
